@@ -43,4 +43,5 @@ jobs:
         env:
           TF_WORKSPACE: default
         run: |
+          terraform init
           terraform plan
