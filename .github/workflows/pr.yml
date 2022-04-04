@@ -34,7 +34,7 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          skip_check: "CKV_AWS_189, CKV_AWS_3"
+          skip_check: CKV_AWS_189,CKV_AWS_3
           soft_fail: false # optional: do not return an error code if there are failed checks
           framework: terraform # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
           download_external_modules: true # optional: download external terraform modules from public git repositories and terraform registry
