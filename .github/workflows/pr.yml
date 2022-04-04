@@ -15,7 +15,6 @@ jobs:
   plan:
     name: Plan
     runs-on: ubuntu-latest
-    environment: production
 
     steps:
       - name: Checkout
