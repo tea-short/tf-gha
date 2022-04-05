@@ -1,4 +1,4 @@
-name: Deploy
+name: Apply
 
 on:
   push:
@@ -10,7 +10,7 @@ env:
 
 jobs:
   plan:
-    name: Plan
+    name: Apply
     runs-on: ubuntu-latest
 
     steps:
@@ -40,8 +40,7 @@ jobs:
           TF_WORKSPACE: default
         run: |
           terraform init
-          terraform apply
-          terraform plan
+          terraform apply -auto-approve
 
       - name: Terraform plan
         id: tf-plan
