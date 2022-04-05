@@ -45,7 +45,6 @@ jobs:
           terraform init
           terraform plan
 
-jobs:
   checkov:
     name: Run Checkov
     runs-on: ubuntu-latest
