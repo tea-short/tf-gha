@@ -1,2 +1,2 @@
 # tf-gha
-Custom Terraform deployment with GHA
+Custom Terraform deployment with GHA.
