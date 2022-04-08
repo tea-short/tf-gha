@@ -13,3 +13,7 @@ jobs:
     uses: tea-short/workflows/.github/workflows/main.yml@main
     with:
       runs-on: self-hosted
+    secrets:
+      aws-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      aws-secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
