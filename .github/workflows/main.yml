@@ -9,7 +9,6 @@ env:
   AWS_REGION: eu-west-2
 
 jobs:
-jobs:
   main-workflow:
     uses: tea-short/workflows/.github/workflows/main.yml@main
     with:
