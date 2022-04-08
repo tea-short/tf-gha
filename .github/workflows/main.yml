@@ -11,7 +11,7 @@ env:
 jobs:
   deploy-dev:
     name: Deploy Dev
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment: dev
 
     steps:
@@ -48,7 +48,7 @@ jobs:
 
   deploy-prod:
     name: Deploy Prod
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment: prod
 
     steps:
