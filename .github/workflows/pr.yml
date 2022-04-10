@@ -13,7 +13,7 @@ env:
 
 jobs:
   pr-workflow:
-    uses: tea-short/workflows/.github/workflows/pr.yml@workflows
+    uses: tea-short/workflows/.github/workflows/pr.yml@v0.0.1
     with:
       checkov_skip_check: CKV_AWS_189,CKV_AWS_3
       runs-on: ubuntu-latest

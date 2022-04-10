@@ -10,7 +10,7 @@ env:
 
 jobs:
   main-workflow:
-    uses: tea-short/workflows/.github/workflows/main.yml@main
+    uses: tea-short/workflows/.github/workflows/main.yml@v0.0.1
     with:
       runs-on: ubuntu-latest
     secrets:
