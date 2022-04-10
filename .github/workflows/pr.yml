@@ -16,7 +16,7 @@ jobs:
     uses: tea-short/workflows/.github/workflows/pr.yml@workflows
     with:
       checkov_skip_check: CKV_AWS_189,CKV_AWS_3
-      runs-on: self-hosted
+      runs-on: ubuntu-latest
     secrets:
       aws-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
       aws-secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
